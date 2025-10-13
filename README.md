@@ -1,1 +1,1 @@
-# EKS-terraform-jenkins
+# EKS-terraform-github
