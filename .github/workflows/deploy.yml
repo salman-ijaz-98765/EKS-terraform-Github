@@ -45,3 +45,7 @@ jobs:
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main'
         run: terraform apply -auto-approve tfplan
+
+      - name: Terraform Destroy
+        if: github.ref == 'refs/heads/destroy'  # Trigger on destroy branch
+        run: terraform destroy -auto-approve
